@@ -1,0 +1,42 @@
+.block-gallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 8px;
+  width: 100%;
+  height: 100%;   /* fills resized parent */
+  box-sizing: border-box;
+
+}
+.block-gallery .gallery div {
+  background: #d1d5db;
+  height: 80px;
+   width: 100%;
+  height: 100%;   
+  border-radius: 6px;
+}
+.block-gallery {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.gallery-row {
+  display: flex;              /* horizontal layout */
+  gap: 12px;                  /* space between images */
+  flex-wrap: nowrap;          /* keep them in one row */
+  overflow-x: auto;           /* scroll if too many images */
+}
+
+.gallery-item {
+  flex: 0 0 auto;             /* prevent shrinking */
+  width: 200px;               /* fixed width per image */
+  text-align: center;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;          /* fill nicely */
+  border-radius: 6px;
+}
