@@ -1,0 +1,36 @@
+.block-hero {
+  width: 100%;
+  height: 100%;   /* fills resized parent */
+  box-sizing: border-box;
+  background: #111827;
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+.block-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.block-hero button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.block-hero [contenteditable="true"] {
+  outline: none;
+  cursor: text;
+}
+
+.block-hero h1[contenteditable="true"]:focus,
+.block-hero p[contenteditable="true"]:focus {
+  border-bottom: 1px dashed #aaa;
+}
