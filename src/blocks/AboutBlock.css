@@ -1,0 +1,12 @@
+.block-about {
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;   /* fills resized parent */
+  box-sizing: border-box;
+
+}
+.block-about h2 {
+  margin-bottom: 8px;
+}
