@@ -1,0 +1,133 @@
+/* DropzoneDemo.css */
+
+.builder {
+  display: flex;
+  height: 100vh;
+}
+
+.toolbox {
+  width: 180px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-right: 1px solid #E5E7EB;
+}
+
+.tool-item {
+  height: 48px;
+  background: #EEF2FF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.toolbox-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* or left, depending on your layout */
+}
+
+.draggable {
+  width: 120px;
+  height: 60px;
+  background: #4F46E5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: grab;
+  user-select: none;
+
+  position: absolute; 
+}
+
+/* Canvas / Builder Area */
+.dropzone {
+  margin-top: 0px;
+  margin-right: 0;
+  margin-left: 200px;
+
+  width: 1000px;
+  height: 1500px;
+  flex: 1;
+  margin: 16px;
+
+  border: 2px dashed #9CA3AF;
+  border-radius: 12px;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: #6B7280;
+  min-height: 500px;
+
+  position: relative; 
+  overflow: hidden;   
+}
+
+/* Feedback classes */
+.drop-active {
+  border-color: #2563EB;
+}
+
+.drop-target {
+  background: #E0F2FE;
+}
+
+.can-drop {
+  background: #10B981 !important;
+}
+
+/* Layout helper */
+.parent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* CANVAS ITEM */
+.canvas-item {
+  position: absolute;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  overflow: hidden;
+  transition: width 0.2s ease, height 0.2s ease, transform 0.1s ease;
+
+}
+
+.canvas-item.selected {
+  outline: 2px solid #2563eb; /* highlight selected block */
+}
+
+
+/* BLOCK STYLES */
+.block {
+  padding: 16px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.block-hero h1 { margin: 0 0 8px; }
+.block-hero button { margin-top: 12px; }
+
+.block-gallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  height: 100%;
+}
+.block-gallery .gallery div {
+  background: #e5e7eb;
+}
+
+.block-contact input,
+.block-contact textarea {
+  width: 100%;
+  margin-bottom: 8px;
+}
