@@ -1,0 +1,11 @@
+.block-footer {
+  background: #111827;
+  color: #f9fafb;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;   /* fills resized parent */
+  box-sizing: border-box;
+
+}
